@@ -1,0 +1,18 @@
+---
+- name: Install Nginx on Remote Servers
+  hosts: webservers
+  become: yes  # Run tasks with escalated privileges (sudo)
+  tasks:
+    - name: Update package cache
+      apt:
+        update_cache: yes  # Update package cache on Ubuntu/Debian systems
+
+    - name: Install Nginx
+      apt:
+        name: nginx  # Package name to install
+        state: present  # Ensure the package is installed
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started  # Ensure the service is started
