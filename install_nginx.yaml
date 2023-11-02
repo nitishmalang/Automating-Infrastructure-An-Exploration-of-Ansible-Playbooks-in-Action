@@ -14,5 +14,5 @@
 
     - name: Start Nginx service
       service:
-        name: nginx
+        name: nginx  #webserver
         state: started  # Ensure the service is started
