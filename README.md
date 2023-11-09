@@ -45,5 +45,5 @@ To run a playbook, use the following command:
 
 `ansible-playbook playbooks/playbook_name.yml`
 
-Replace playbook_name.yml with the name of the playbook you want to run.
+Replace playbook_name.yml with name of the playbook you want to run.
 
